@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Course; // forward declaration
+class Course; // forward declaration  ----> chicken and egg problem
 
 class Student
 {
@@ -31,7 +31,7 @@ class Course
 {
     string name_;
     string code_;
-    Student *students_[10];
+    Student *students_[10];  // a smll restriction for num 
     int studentCount_;
 
 public:
